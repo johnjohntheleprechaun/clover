@@ -3,6 +3,27 @@ import {hashTree} from "./hash";
 import {cloneDeepWithoutLoc} from "@babel/types";
 
 /**
+ * Compare identifiers from two different loaded programs.
+ *
+ * @argument a The first program.
+ * @argument b The second program.
+ * @argument identifier The identifier to evaluate
+ *
+ * @returns `true` if there's been a change.
+ */
+export function checkForChange(a: any, b: any, identifier: string): boolean {
+    const nodeA = getNodeByIdentifier(identifier, a);
+    const nodeB = getNodeByIdentifier(identifier, b);
+
+    if (nodeA.hash === nodeB.hash) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+/**
  * Load a program and hash the AST.
  *
  * @argument code The code to parse.
