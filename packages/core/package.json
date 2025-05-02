@@ -17,7 +17,9 @@
     },
     "homepage": "https://github.com/johnjohntheleprechaun/clover#readme",
     "devDependencies": {
-        "@types/node": "^22.15.3"
+        "@types/node": "^22.15.3",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
     },
     "dependencies": {
         "@babel/parser": "^7.27.1",
