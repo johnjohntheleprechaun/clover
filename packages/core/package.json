@@ -1,0 +1,28 @@
+{
+    "name": "@clover-doc/core",
+    "version": "0.0.0",
+    "description": "a documentation support system",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "./scripts/test.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/johnjohntheleprechaun/clover.git"
+    },
+    "author": "",
+    "license": "AGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/johnjohntheleprechaun/clover/issues"
+    },
+    "homepage": "https://github.com/johnjohntheleprechaun/clover#readme",
+    "devDependencies": {
+        "@types/node": "^22.15.3",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "@babel/parser": "^7.27.1",
+        "@babel/types": "^7.27.1"
+    }
+}
