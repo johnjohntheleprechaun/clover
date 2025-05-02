@@ -12,6 +12,7 @@ export function hashTree(node: any): Buffer {
 
         const combined = Buffer.concat(childHashes);
         const hash = createHash("sha256").update(combined).digest();
+        node.hash = hash.toString("hex");
         return hash;
     }
     else {
